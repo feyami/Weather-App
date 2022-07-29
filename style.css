@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100vw;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    color: darkblue;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+}
+
+header {
+    background-color: rgb(179, 179, 179);
+    
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('https://source.unsplash.com/1600x900/?sky'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 5px solid darkblue;
+
+}
+.header{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 20px;
+}
+
+l
+
+ 
+
+#header h2 {
+    font-size: 2rem;
+}
+
+#search_box {
+    margin-right: 35px;
+    position: relative;
+    width: 350px;
+}
+
+#search_box input {
+    box-sizing: border-box;
+    color: darkblue;
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+    
+    border-radius: 25px;
+    outline: none;
+    background-color: transparent;
+    transition: all 0.30s ease-in-out;
+    border: 1px solid #DDDDDD;
+}
+
+input:focus {
+    box-shadow: 0 0 15px darkblue;
+    border: 5px solid darkblue;
+}
+
+input:hover {
+    transform: scale(1.1);
+}
+
+#search_box i {
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    top: 25%;
+    right: 4%;
+    transition: 1s;
+}
+
+#search_box i:hover {
+    color: blue;
+    transform: scale(1.5);
+}
+
+
+
+/* 
+@media(max-width:1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    #main {
+        width: 95%;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    #header {
+        margin: 10px 0;
+        padding: 20px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    #header h2 {
+        padding: 5px 0;
+    }
+}
+
+@media(max-width:480px) {
+    #header h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #search_box {
+        width: 80%;
+        margin: auto;
+    }
+
+    #search_box input {
+        font-size: .7rem;
+    }
+}
+ */
+
+
+
+
+.card {
+     
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+     
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+  .dropbtn {
+    background-color:transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    background-color:rgb(179, 179, 179);
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    
+    
+     font-size: large;
+    padding: 15px;
+    background-color:darkblue;
+    color: #DDDDDD;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+  } 
+  
+  .dropdown-content input[type=radio] {
+    transform: scale(2);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: darkblue;
+  }
+  
+  
+
+
+

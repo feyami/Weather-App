@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/appIcon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather APP</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="appIcon">
+                <h2>
+                    <i class="fa-solid fa-cloud-sun-rain" style="color: darkblue"></i>
+                    Weather APP
+                </h2>
+            </div>
+            <div id="search_box">
+                <input id="input" type="text" placeholder="Search..." /><i id="search" class="fas fa-search"></i>
+            </div>
+
+            <div class="dropdown" style="float: right">
+                <button class="dropbtn"><i class="fa-solid fa-sliders"></i></button>
+                <div class="dropdown-content">
+                    <div class="radiobuttons">
+                        <div class="unitRadiobuttons">
+                            <br /><b> Unit </b><br />
+                            <input type="radio" name="unit" id="metric" value="metric" />Metric<br />
+                            <input type="radio" name="unit" id="imperial" value="imperial" />Imperial<br />
+
+                        </div>
+                        <div class="pictureCheckboxes">
+                            <br /><b> Type Of Picture </b><br />
+                            <input type="radio" name="picture" id="all" value="all" />All<br />
+                            <input type="radio" name="picture" id="photo" value="photo" />Photo<br />
+                            <input type="radio" name="picture" id="illustration" value="illustration" />Illustration<br />
+                            <input type="radio" name="picture" id="vector" value="vector" />Vector<br /><br />
+                        </div>
+                    </div>
+
+                    <button type="button" onclick=" checkButton()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="card">
+            <div class="weather loading">
+                <h2 class="city"></h2>
+                <h1 class="temp"></h1>
+                <div class="flex">
+                    <img src="" alt="" class="icon" />
+                    <div class="description"></div>
+                </div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
